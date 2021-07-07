@@ -14,7 +14,7 @@
     </tr>
     <tr>
       <td>Processor type</td>
-      <td>Intel Core i5 7200U</td>
+      <td>Intel Core i5 7200U/Intel Core i7 7500U</td>
     </tr>
      <tr>
       <td>VGA</td>
@@ -54,9 +54,11 @@ XCPM power management is native supported. HWP is fully enabled as well.
 
 #### Wi-Fi & Bluetooth
 
-This laptop comes with an Intel WiFi + Bluetooth combo so, I replaced mine with BCM94352Z (DM1560). Airport, Handoff are working correctly.
+This laptop comes with an Intel WiFi + Bluetooth combo. You need to add Airportitlwm kext to get it working.
+I replaced mine with BCM94352Z (DM1560). Airport, Handoff are working correctly.
 
-###### Important: If you have an Intel card, remove BCM-related kexts and start from there.
+###### Important: If you have an Intel card, remove BCM-related kexts and and add Airportitlwm.kext for BigSur from following link.
+https://github.com/OpenIntelWireless/itlwm/releases/latest
 
 #### Camera
 
@@ -75,6 +77,10 @@ Functioning normally.
 #### Display
 
 Working fine with hardware acceleration.
+
+####VGA
+
+Working fine.
 
 #### Battery
 
